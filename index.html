@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title> Walentynka </title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        function f1()
+        {
+            document.getElementById("section1").innerHTML="<h1> 😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊 <br><br> 😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘 <br><br> 🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷 </h1> <br> <video src='catVibing.mov' width='34.1%' height='39.9%' loop='' autoplay=''>";
+        }
+
+        function f2(id)
+        {
+            var min = 18;
+            var max = 82;
+            var x = Math.round(Math.random() * (max-min) + min);
+            var y = Math.round(Math.random() * (max-min) + min);
+            id.style.left=x+"%";
+            id.style.top=y+"%";
+            id.innerHTML="😡😡Nie😡😡";
+        }
+    </script>
+    <body>
+        <section id="section1">
+            <h1 id="h11"> Czy zostaniesz moją walentynką? 😊😊😊 </h1>
+            <button onclick="f1()" id="button1"> Tak </button>
+            <button onmouseover="f2(this)" id="button2"> Nie </button>
+        </section>
+    </body>
+</html>
